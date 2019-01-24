@@ -60,13 +60,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        {/* <Logo img_src={`${baseUrl}img/docusaurus.svg`} />*/}
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            {/* <Button href="#try">Try It Out</Button>*/}
+            {/* <Button href={docUrl('doc1.html')}>Example Link</Button>*/}
+            {/* <Button href={docUrl('doc2.html')}>Example Link 2</Button>*/}
           </PromoSection>
         </div>
       </SplashContainer>
@@ -146,13 +146,13 @@ class Index extends React.Component {
         {[
           {
             content: 'This is the content of my feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            // image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'top',
             title: 'Feature One',
           },
           {
             content: 'The content of my second feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            // image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'top',
             title: 'Feature Two',
           },
