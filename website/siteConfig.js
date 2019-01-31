@@ -14,7 +14,7 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
+    image: '/img/icon.svg',
     infoLink: '',
     pinned: true,
   },
@@ -48,8 +48,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
+  headerIcon: 'img/icon.svg',
+  footerIcon: 'img/icon.svg',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
@@ -89,8 +89,8 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  ogImage: 'img/icon.png',
+  twitterImage: 'img/icon.png',
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
