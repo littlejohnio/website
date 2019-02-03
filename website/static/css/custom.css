@@ -1,5 +1,23 @@
 /* your custom css */
 
+/*h2.projectTitle {
+    color: #21ce99;
+}*/
+
+img.logo {
+    background:url('/img/full_black.png');
+    background-size: cover;
+    padding-right:15px;
+    padding-bottom:5px;
+}
+
+img.logo:hover {
+    background:url('/img/full_green.png');
+    background-size: cover;
+    padding-right:15px;
+    padding-bottom:5px;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 

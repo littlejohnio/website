@@ -6,6 +6,7 @@
  */
 
 const React = require('react');
+const ReactDOM = require('react-dom');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
@@ -106,7 +107,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Talk about trying this out',
-            image: `${baseUrl}img/icon.svg`,
+            image: `${baseUrl}img/fake.png`,
             imageAlign: 'left',
             title: 'Try it Out',
           },
@@ -120,7 +121,7 @@ class Index extends React.Component {
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/icon.svg`,
+            image: `${baseUrl}img/fake.png`,
             imageAlign: 'right',
             title: 'Description',
           },

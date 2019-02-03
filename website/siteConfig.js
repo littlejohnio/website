@@ -21,8 +21,9 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'LittleJohn.io', // Title for your website.
-  tagline: 'financial analytics for the common folk',
+  title: 'LittleJohn', // Title for your website.
+  disableHeaderTitle: true,
+  tagline: 'Financial Analytics for the Common Folk',
   url: 'https://littlejohn.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -48,8 +49,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/icon.svg',
-  footerIcon: 'img/icon.svg',
+  headerIcon: 'img/fake.png',
+  footerIcon: 'img/icon_green.png',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
@@ -73,7 +74,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} LittleJohn.io`,
+  copyright: `Copyright © ${new Date().getFullYear()} LittleJohn`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
