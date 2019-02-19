@@ -3,6 +3,10 @@
 /*h2.projectTitle {
     color: #21ce99;
 }*/
+div.mainContainer {
+    padding: 0px;
+    padding-top:50px;
+}
 
 img.logo {
     background:url('/img/full_black.png');

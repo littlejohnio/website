@@ -61,13 +61,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        {/* <Logo img_src={`${baseUrl}img/docusaurus.svg`} />*/}
+        {/*<Logo img_src={`${baseUrl}img/icon.svg`} />*/}
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            {/* <Button href="#try">Try It Out</Button>*/}
-            {/* <Button href={docUrl('doc1.html')}>Example Link</Button>*/}
-            {/* <Button href={docUrl('doc2.html')}>Example Link 2</Button>*/}
+            { <Button href="#try">Try It Out</Button>}
+            { <Button href={docUrl('docs.html')}>Documentation</Button>}
+            { <Button href={docUrl('api.html')}>API Overview</Button>}
           </PromoSection>
         </div>
       </SplashContainer>
@@ -84,7 +84,9 @@ class Index extends React.Component {
       <Container
         padding={['bottom', 'top']}
         id={props.id}
-        background={props.background}>
+        background={props.background}
+        className={props.className}
+        style={props.style}>
         <GridBlock
           align="center"
           contents={props.children}
@@ -94,23 +96,31 @@ class Index extends React.Component {
     );
 
     const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
+      <Block layout="threeColumn"
+      className="productShowcaseSection paddingBottom"
+      stype={{textAlign: 'center'}}>
         {[
           {
-            content: 'Talk about trying this out',
-            image: `${baseUrl}img/fake.png`,
+            content: '',
+            title: '',
+            // image: `${baseUrl}img/code.svg`,
             imageAlign: 'left',
-            title: 'Try it Out',
+
           },
+          {
+            content: 'LittleJohn can help you manage your risks and maximize your returns.',
+            title: 'Simple, Intuitive, Interactive',
+            // image: `${baseUrl}img/code.svg`,
+            // imageAlign: 'bottom',
+
+          },
+          {
+            content: '',
+            title: '',
+            // image: `${baseUrl}img/code.svg`,
+            imageAlign: 'right',
+          },
+
         ]}
       </Block>
     );
@@ -121,74 +131,32 @@ class Index extends React.Component {
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/fake.png`,
-            imageAlign: 'right',
+            image: `${baseUrl}img/code.svg`,
+            imageAlign: 'left',
             title: 'Description',
           },
         ]}
       </Block>
     );
 
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content: 'Talk about learning how to use this',
-            image: `${baseUrl}img/icon.svg`,
-            imageAlign: 'right',
-            title: 'Learn How',
-          },
-        ]}
-      </Block>
-    );
-
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block layout="fourColumn" background="light">
         {[
           {
-            content: 'This is the content of my feature',
-            // image: `${baseUrl}img/icon.svg`,
+            content: 'LittleJohn provides powerful tools for analyzing and hedging risk, performing simulated trades and backtests, all in realtime.',
+            image: `${baseUrl}img/line-chart.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Real time risk and trade analysis',
           },
           {
-            content: 'The content of my second feature',
-            // image: `${baseUrl}img/icon.svg`,
+            content: 'Leveraging popular open source charting tools, LittleJohn provides the latest and greatest portfolio and market data visualization.',
+            image: `${baseUrl}img/pie-chart.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Interactive and cross-sectional visualization',
           },
         ]}
       </Block>
     );
-
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter(user => user.pinned)
-        .map(user => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
-      );
-    };
 
     return (
       <div>
@@ -196,10 +164,7 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
+          {/*<Description />*/}
         </div>
       </div>
     );
