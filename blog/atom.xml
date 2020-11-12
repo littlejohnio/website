@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://littlejohn.io/blog</id>
+    <id>https://littlejohnio.github.io/website/blog</id>
     <title>LittleJohn Blog</title>
-    <updated>2016-03-11T06:00:00Z</updated>
-    <generator>Feed for Node.js</generator>
-    <link rel="alternate" href="https://littlejohn.io/blog"/>
+    <updated>2016-03-11T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://littlejohnio.github.io/website/blog"/>
     <subtitle>The best place to stay up-to-date with the latest LittleJohn news and events.</subtitle>
-    <logo>https://littlejohn.io/img/fake.png</logo>
-    <rights>Copyright © 2019 LittleJohn</rights>
+    <logo>https://littlejohnio.github.io/website/img/fake.png</logo>
+    <rights>Copyright © 2020 LittleJohn</rights>
     <entry>
         <title type="html"><![CDATA[Website Release]]></title>
-        <id>https://littlejohn.io/blog/2016/03/11/blog-post.html</id>
-        <link href="https://littlejohn.io/blog/2016/03/11/blog-post.html">
-        </link>
-        <updated>2016-03-11T06:00:00Z</updated>
+        <id>https://littlejohnio.github.io/website/blog/2016/03/11/blog-post.html</id>
+        <link href="https://littlejohnio.github.io/website/blog/2016/03/11/blog-post.html"/>
+        <updated>2016-03-11T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
 ]]></summary>
         <author>
